@@ -1,0 +1,13 @@
+[package]
+name = "day_10"
+version = "0.1.0"
+authors = ["Guillaume Galy <guilgaly@gmail.com>"]
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+common = { path = "../common"}
+sscanf = "0.4.4" # parse string based on format string - https://docs.rs/sscanf/latest/sscanf/
+

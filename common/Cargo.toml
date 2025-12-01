@@ -1,0 +1,17 @@
+[package]
+name = "common"
+version = "0.1.0"
+authors = ["Guillaume Galy <guilgaly@gmail.com>"]
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "0.14.0" # https://docs.rs/itertools/latest/itertools/
+lazy_static = "1.5.0" # https://docs.rs/lazy_static/latest/lazy_static/
+maplit = "1.0.2" # container literals - https://docs.rs/maplit/latest/maplit/
+regex = "1.12.2" # https://docs.rs/regex/latest/regex/
+sscanf = "0.4.4" # parse string based on format string - https://docs.rs/sscanf/latest/sscanf/
+ascii = "1.1.0" # ASCII-only strings/chars - https://docs.rs/ascii/latest/ascii/
+ndarray = "0.17.1 " # n-dimensional container - https://docs.rs/ndarray/latest/ndarray/
+# lcmx = "0.1.7" # Least Common Multiple of multiple values
