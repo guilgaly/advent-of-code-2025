@@ -1,3 +1,4 @@
+use common::time_execution;
 use std::error::Error;
 
 static INPUT: &str = include_str!("input");
@@ -6,11 +7,9 @@ fn main() -> Result<(), Box<dyn Error>> {
     // e.g. read lines
     let product_ranges = parse_input(&INPUT)?;
 
-    let res1 = part_1(&product_ranges);
-    println!("Part 1 result: {}", res1);
+    time_execution("Part 1", || part_1(&product_ranges));
 
-    let res2 = part_2(&product_ranges);
-    println!("Part 2 result: {}", res2);
+    time_execution("Part 2", || part_2(&product_ranges));
 
     Ok(())
 }

@@ -1,5 +1,6 @@
 use common::itertools::Itertools;
 use common::sscanf::sscanf;
+use common::time_execution;
 use std::error::Error;
 
 static INPUT: &str = include_str!("input");
@@ -13,11 +14,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         .map(|line| sscanf!(line, "{usize},{str}"))
         .collect::<Result<Vec<_>, _>>()?;
 
-    let res1 = part_1(&lines);
-    println!("Part 1 result: {}", res1);
+    time_execution("Part 1", || part_1(&lines));
 
-    let res2 = part_2(&lines);
-    println!("Part 2 result: {}", res2);
+    time_execution("Part 2", || part_2(&lines));
 
     Ok(())
 }

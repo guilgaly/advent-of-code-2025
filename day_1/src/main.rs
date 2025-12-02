@@ -1,3 +1,4 @@
+use common::time_execution;
 use std::error::Error;
 
 static INPUT: &str = include_str!("input");
@@ -5,11 +6,9 @@ static INPUT: &str = include_str!("input");
 fn main() -> Result<(), Box<dyn Error>> {
     let rotations = parse_rotations(&INPUT)?;
 
-    let res1 = part_1(&rotations);
-    println!("Part 1 result: {}", res1);
+    time_execution("Part 1", || part_1(&rotations));
 
-    let res2 = part_2(&rotations);
-    println!("Part 2 result: {}", res2);
+    time_execution("Part 2", || part_2(&rotations));
 
     Ok(())
 }
