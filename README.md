@@ -1,5 +1,7 @@
 # [Advent of Code 2025](https://adventofcode.com/2025)
 
+requires `brew install z3` (used for day 10).
+
 Format & build the workspace:
 
 ```shell
